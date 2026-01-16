@@ -34,7 +34,7 @@ header h1 {
 }
 
 header p {
-  font-size: 0.1rem;
+  font-size: 1rem;
 }
 
 /* Main content */
@@ -64,7 +64,7 @@ main {
 .article p {
   color: #665;
   margin-bottom: 0rem;
-  font-size: 0rem;
+  font-size: 1rem;
 }
 
 /* Output areas */
