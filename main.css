@@ -16,11 +16,15 @@ body {
 /* Header styles */
 header {
   background: linear-gradient(134deg, #667eea 0%, #764ba2 100%);
-  padding: 1rem;
+  padding: clamp(1rem, 3vw, 2rem); 
   border-radius: 7px;
   margin-bottom: 1rem;
   text-align: center;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 95%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header h1 {
@@ -168,19 +172,24 @@ code {
   margin-top: 1.5rem;
 }
 
-img{
-  max-width:100%;
-}
+
 
 a{
   text-decoration:none;
   color:black;
 }
 .navbar {
-  max-width:100% ;
-  padding: 3px;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  /* Use viewport units so the gap shrinks on mobile */
+  gap: clamp(0.5rem, 4vw, 2rem); 
   list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.ahead {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
